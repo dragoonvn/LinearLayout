@@ -1,18 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="8"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#f20"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#F3E5F5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:text="A"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#1D6C14"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#F3E5F5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:text="B"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#B8A329"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#F3E5F5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:text="C"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#3879AA"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#F3E5F5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:text="D"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#B3A843"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#F3E5F5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:text="A"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#87622C"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#F3E5F5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:text="B"/>
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#5528A3"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#F3E5F5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:text="C"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#972B09"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#F3E5F5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:text="D"/>
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>
